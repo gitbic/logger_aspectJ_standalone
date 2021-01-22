@@ -1,0 +1,31 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+}
+
+dependencies {
+    compile 'org.aspectj:aspectjrt:1.9.6'
+    compile 'org.aspectj:aspectjweaver:1.9.6'
+    compile 'org.aspectj:aspectjtools:1.9.6'
+    compile 'ru.clevertec:json-serializer:1.0'
+}
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+group 'ru.clevertec'
+version '1.0-SNAPSHOT'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'ru.clevertec'
+            artifactId = 'log-aspect'
+            version = '1.0'
+
+            from components.java
+        }
+    }
+}
