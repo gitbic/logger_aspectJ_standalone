@@ -1,5 +1,3 @@
-import com.home.TestClass2;
-import ru.clevertec.annotations.LogThisMethod;
 import ru.clevertec.beans.TestClass;
 
 public class TestRunner {
@@ -7,6 +5,8 @@ public class TestRunner {
         TestClass testClass = new TestClass();
         testClass.printA();
         System.out.println(testClass.getInt());
+
+
 //
 //
 //        TestClass2 testClass2 = new TestClass2();

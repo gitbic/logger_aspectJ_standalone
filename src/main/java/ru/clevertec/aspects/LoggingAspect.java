@@ -1,13 +1,10 @@
 package ru.clevertec.aspects;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
-import ru.clevertec.annotations.LogThisMethod;
 import ru.clevertec.beans.JSong;
 import ru.clevertec.constants.Constants;
 
@@ -24,8 +21,9 @@ public class LoggingAspect {
     }
 
     @AfterReturning(pointcut = "methodToBeLogging()", returning = "resultOfMethodInvocation")
-    public void logMethodInvocation(JoinPoint joinPoint, Object resultOfMethodInvocation) throws IllegalAccessException {
+    public void logMethodInvocation(JoinPoint joinPoint, Object resultOfMethodInvocation) throws IllegalAccessException{
         System.out.println("AFTER RETURNINGGGGGGGGGGGGGGGGG");
+
         JSong jSong = new JSong();
         jSong.setPrettyString(true);
 
@@ -72,5 +70,6 @@ public class LoggingAspect {
 //        }
 
     }
+
 
 }

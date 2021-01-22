@@ -9,7 +9,5 @@ public class LoggerPlugin implements Plugin<Project> {
 
     @Override
     public void apply(Project project) {
-        LoggerPluginExtension extension =
-                project.getExtensions().create("option", LoggerPluginExtension.class);
     }
 }
