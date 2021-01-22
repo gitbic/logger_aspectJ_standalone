@@ -11,4 +11,5 @@ import java.lang.annotation.Target;
 @Retention(value = RetentionPolicy.RUNTIME)
 public @interface LogThisMethod {
     LoggingLevel loggingLevel() default LoggingLevel.INFO;
+//    Level loggingLevel() default Level.INFO.ge;
 }
