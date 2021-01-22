@@ -1,4 +1,4 @@
-import ru.clevertec.beans.TestClass;
+package ru.clevertec.tests;
 
 public class TestRunner {
     public static void main(String[] args) {

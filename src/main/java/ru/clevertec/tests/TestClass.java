@@ -1,4 +1,4 @@
-package ru.clevertec.beans;
+package ru.clevertec.tests;
 
 import ru.clevertec.annotations.LogThisMethod;
 
