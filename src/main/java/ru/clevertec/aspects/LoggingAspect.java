@@ -16,7 +16,6 @@ import ru.clevertec.enums.LoggingLevel;
 @Aspect
 public class LoggingAspect {
 
-
     @Pointcut("execution(@ru.clevertec.annotations.* * *(..))")
     private void loggedMethod() {
     }

@@ -15,14 +15,15 @@ public class TestRunner {
     private static final String FILENAME = "Log.log";
 
     public static void main(String[] args) {
-//        TestClass testClass = new TestClass();
-//        testClass.printA();
-//        System.out.println(testClass.getInt());
+        TestClass testClass = new TestClass();
+        testClass.printA();
+        System.out.println(testClass.getInt());
 
 
-        logger.info("Just a log message.");
-        logger.debug("af98das90f7dsa97f");
-        logger.error("asdf98w4urioafah");
+
+//        logger.info("Just a log message.");
+//        logger.debug("af98das90f7dsa97f");
+//        logger.error("asdf98w4urioafah");
 
         try {
             Files.readAllBytes(Paths.get(FILENAME));

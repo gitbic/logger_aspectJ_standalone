@@ -1,6 +1,8 @@
 <aspectj>
     <weaver options="-verbose -showWeaveInfo">
         <include within="*" />
+        <include within="ru.clevertec.tests.TestClass "/>
+        <include within="ru.clevertec.aspects.* "/>
     </weaver>
     <aspects>
 		<aspect name="ru.clevertec.aspects.LoggingAspect"/>
